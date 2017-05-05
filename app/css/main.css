@@ -24,10 +24,26 @@ body {
   padding: 0 10px;
 }
 
-ul {
-  justify-content: center;
-  transform: 1s;
-  flex: 1;
+.header {
+  padding: 50px;
+  background-color: blue;
+}
+
+.header a {
+  color: #fff;
+  position: relative;
+}
+
+
+.hidden-user {
+  background-color: yellow;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-in-out;
+}
+
+.hidden-user__box {
+  padding: 50px;
 }
 
 
