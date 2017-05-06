@@ -35,12 +35,12 @@ body {
 }
 
 
-/*.hidden-user {
+.hidden-user {
   background-color: yellow;
   max-height: 0;
   overflow: hidden;
   transition: max-height .3s ease-in-out;
-}*/
+}
 
 .hidden-user__box {
   padding: 50px;
