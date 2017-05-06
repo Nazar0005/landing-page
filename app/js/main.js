@@ -5,13 +5,7 @@ var x = function () {
     
 }
 document.querySelector('.user-account__sign').addEventListener('click', function () {
-    var div = document.querySelector('.hidden-user');
-
-    if (div.style.maxHeight) {
-        div.style.maxHeight = null;
-    } else {
-        div.style.maxHeight = div.scrollHeight + 'px';
-    }
+ 
 });
 
 
