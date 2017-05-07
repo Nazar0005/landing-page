@@ -34,6 +34,14 @@ body {
   position: relative;
 }
 
+.game {
+  cursor: pointer;
+  background: url(../images/layer-33.jpg) no-repeat center, top;
+  background-size: cover;
+  height: 260px;
+  margin: 0 auto;
+}
+
 
 
 
