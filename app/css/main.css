@@ -25,27 +25,27 @@ body {
 }
 
 .header {
-  padding: 50px;
-  background-color: blue;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: plum;
 }
 
-.header a {
-  color: #fff;
-  position: relative;
+.menu {
+  display: flex;
+  justify-content: center;
 }
 
-.game {
-  cursor: pointer;
-  background: url(../images/layer-33.jpg) no-repeat center, top;
-  background-size: cover;
-  height: 260px;
-  margin: 0 auto;
+.menu__item {
+  margin: 0 15px;
 }
 
-
-
-
-
+.menu__link {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  color: green;
+}
 
 
 

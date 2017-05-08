@@ -1,0 +1,7 @@
+node_modules/
+app/images
+.vscode/
+app/psd
+package.json
+gitfolder/
+gulpfile.js
