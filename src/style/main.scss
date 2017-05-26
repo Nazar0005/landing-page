@@ -1,24 +1,26 @@
+@import 'reset';
+@import 'typography';
+@import 'color';
+@import 'variable';
+@import 'layout/header';
+@import 'layout/footer';
+
 html {
   height: 100%;
 }
-
-$fontMain: #000;
 
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: $fontMain;
   font: normal 1em/1.5 sans-serif;
 }
 
-
-
-.clearfix:after {
-  content: "";
+.clearfix::after {
   display: table;
   clear: both;
+  content: '';
 }
 
 .wrapper {
@@ -26,9 +28,9 @@ body {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1170px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 
@@ -47,58 +49,11 @@ body {
 
 
 
-/*Цвет текст в Placeholder*/
-
-/*input[type="search"]::-moz-placeholder {
-  color: #ffd595; 
-}
-
-input[type="search"]::-webkit-input-placeholder { color: #ffd595; }
-input[type="search"]:-ms-input-placeholder { color: #ffd595; }
-input[type="search"]::-ms-input-placeholder { color: #ffd595; }
-input[type="search"]::placeholder { color: #ffd595; } */
 
 
 
 
-/*Красиво убрать placeholder*/
-
-/*input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
-input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
-input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
-input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
-input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
-input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
-input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
-input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}*/
 
 
 
-/* Если экран меньше чем 700px (вертикальная и горизонтальная ориентация) ----------- */
-@media (max-width: 700px) {
-  /* стили */
-}
-
-
-
-
-/* Планшеты Если экран меньше чем 700px (горизонтальная ориентация) ----------- */
-@media (min-width: 700px) and (orientation: landscape) {
-  /* стили */
-}
-
-
-
-/* Смартфоны (вертикальная и горизонтальная ориентация от 320px-480px) ----------- */
-@media only screen and (min-width : 320px) and (max-width : 480px) {
-  /* стили */
-}
-
-
-
-/* Если экран меньше чем 600px до 800px  (вертикальная и горизонтальная ориентация) ----------- */
-@media (min-width: 600px) and (max-width: 800px) {
-  /* стили */
-}
-
-
+@import 'layout/media';
